@@ -1,0 +1,11 @@
+h1. Spoofing MAC Address
+
+p. This is especially helpful at Panera during the hours they limit your internet access to 30 minutes.
+
+h3. In Terminal do the following
+
+ifconfig en1 | grep ether
+
+Note your mac address. You will need it later if you want to change back to it (or you will have to reboot your mac.)
+
+sudo ifconfig en1 ether 00:e2:e3:e4:e5:e6
